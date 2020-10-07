@@ -8,11 +8,15 @@ public class SumOfDigits {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: "); 
+        int number = input.nextInt();
         int a = number % 10;
-        int b = a / 10; 
-        int c = a+b; 
+        int number1= number / 10; 
+        int b = number1 % 10;
+        int number2 = number1 /10;
+        int c = number2 % 10;
+        
 
-        System.out.println("Sum of digits: " + number + ". Its square root is " + squareRoot);
+        System.out.println("Sum of digits: " + (a + b + c) );
     }
 
 }
